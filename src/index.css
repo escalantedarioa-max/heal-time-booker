@@ -17,11 +17,13 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Medical Blue Primary */
+    --primary: 217 91% 59%;
     --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    
+    /* Medical Success Green */
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -29,12 +31,37 @@ All colors MUST be HSL.
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Medical Alert Red */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 217 91% 59%;
+
+    /* Medical Theme Colors */
+    --medical-primary: 217 91% 59%;
+    --medical-primary-light: 217 91% 69%;
+    --medical-success: 142 76% 36%;
+    --medical-success-light: 142 76% 46%;
+    --medical-danger: 0 84% 60%;
+    --medical-danger-light: 0 84% 70%;
+    
+    /* Medical Gradients */
+    --gradient-medical: linear-gradient(135deg, hsl(var(--medical-primary)), hsl(var(--medical-primary-light)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--medical-success)), hsl(var(--medical-success-light)));
+    --gradient-danger: linear-gradient(135deg, hsl(var(--medical-danger)), hsl(var(--medical-danger-light)));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 95%));
+    
+    /* Medical Shadows */
+    --shadow-medical: 0 10px 30px -10px hsl(var(--medical-primary) / 0.3);
+    --shadow-success: 0 10px 30px -10px hsl(var(--medical-success) / 0.3);
+    --shadow-danger: 0 10px 30px -10px hsl(var(--medical-danger) / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(217 91% 59% / 0.1);
+    
+    /* Medical Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --radius: 0.5rem;
 
